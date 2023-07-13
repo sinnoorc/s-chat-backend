@@ -28,19 +28,19 @@ endpoints:
         name: email
         description: ''
         required: false
-        example: yessenia.kunde@example.com
+        example: rebeka91@example.net
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: 'khw2ojY-?Z7TPQ$3z~q'
+        example: 'J)rP3^9o\"A:Zw'
         type: string
         custom: []
     cleanBodyParameters:
-      email: yessenia.kunde@example.com
-      password: 'khw2ojY-?Z7TPQ$3z~q'
+      email: rebeka91@example.net
+      password: 'J)rP3^9o\"A:Zw'
     fileParameters: []
     responses: []
     responseFields: []
@@ -74,27 +74,27 @@ endpoints:
         name: name
         description: ''
         required: false
-        example: dolores
+        example: dicta
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: false
-        example: isidro77@example.org
+        example: ryan98@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: false
-        example: '$p;&^3*>5,wi'
+        example: "/y'<B.t|nM"
         type: string
         custom: []
     cleanBodyParameters:
-      name: dolores
-      email: isidro77@example.org
-      password: '$p;&^3*>5,wi'
+      name: dicta
+      email: ryan98@example.com
+      password: "/y'<B.t|nM"
     fileParameters: []
     responses: []
     responseFields: []
@@ -221,11 +221,11 @@ endpoints:
         name: receiver
         description: 'The id of the receiver of the message.'
         required: true
-        example: vel
+        example: at
         type: string
         custom: []
     cleanBodyParameters:
-      receiver: vel
+      receiver: at
     fileParameters: []
     responses: []
     responseFields: []
@@ -260,19 +260,19 @@ endpoints:
         name: receiver
         description: 'The id of the receiver of the message.'
         required: true
-        example: enim
+        example: est
         type: string
         custom: []
       payload:
         name: payload
         description: 'The message to be sent.'
         required: true
-        example: officiis
+        example: quos
         type: json
         custom: []
     cleanBodyParameters:
-      receiver: enim
-      payload: officiis
+      receiver: est
+      payload: quos
     fileParameters: []
     responses: []
     responseFields: []
@@ -307,11 +307,11 @@ endpoints:
         name: id
         description: 'The id of the message to be deleted.'
         required: true
-        example: velit
+        example: facere
         type: string
         custom: []
     cleanBodyParameters:
-      id: velit
+      id: facere
     fileParameters: []
     responses: []
     responseFields: []

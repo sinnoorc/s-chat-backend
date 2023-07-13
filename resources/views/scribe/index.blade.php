@@ -8,8 +8,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ asset("/vendor/scribe/css/theme-default.style.css") }}" media="screen">
-    <link rel="stylesheet" href="{{ asset("/vendor/scribe/css/theme-default.print.css") }}" media="print">
+    <link rel="stylesheet" href="{{ asset("/public/vendor/scribe/css/theme-default.style.css") }}" media="screen">
+    <link rel="stylesheet" href="{{ asset("/public/vendor/scribe/css/theme-default.print.css") }}" media="print">
 
     <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.10/lodash.min.js"></script>
 
@@ -25,7 +25,7 @@
             </style>
 
 
-    <script src="{{ asset("/vendor/scribe/js/theme-default-4.22.0.js") }}"></script>
+    <script src="{{ asset("/public/vendor/scribe/js/theme-default-4.22.0.js") }}"></script>
 
 </head>
 
@@ -34,7 +34,7 @@
 <a href="#" id="nav-button">
     <span>
         MENU
-        <img src="{{ asset("/vendor/scribe/images/navbar.png") }}" alt="navbar-image"/>
+        <img src="{{ asset("/public/vendor/scribe/images/navbar.png") }}" alt="navbar-image"/>
     </span>
 </a>
 <div class="tocify-wrapper">
@@ -142,8 +142,8 @@ const headers = {
 };
 
 let body = {
-    "email": "yessenia.kunde@example.com",
-    "password": "khw2ojY-?Z7TPQ$3z~q"
+    "email": "rebeka91@example.net",
+    "password": "J)rP3^9o\\\"A:Zw"
 };
 
 fetch(url, {
@@ -215,10 +215,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-v1-auth-login"
-               value="yessenia.kunde@example.com"
+               value="rebeka91@example.net"
                data-component="body">
     <br>
-<p>Example: <code>yessenia.kunde@example.com</code></p>
+<p>Example: <code>rebeka91@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -226,10 +226,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-v1-auth-login"
-               value="khw2ojY-?Z7TPQ$3z~q"
+               value="J)rP3^9o\"A:Zw"
                data-component="body">
     <br>
-<p>Example: <code>khw2ojY-?Z7TPQ$3z~q</code></p>
+<p>Example: <code>J)rP3^9o\"A:Zw</code></p>
         </div>
         </form>
 
@@ -255,9 +255,9 @@ const headers = {
 };
 
 let body = {
-    "name": "dolores",
-    "email": "isidro77@example.org",
-    "password": "$p;&amp;^3*&gt;5,wi"
+    "name": "dicta",
+    "email": "ryan98@example.com",
+    "password": "\/y'&lt;B.t|nM"
 };
 
 fetch(url, {
@@ -329,10 +329,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="name"                data-endpoint="POSTapi-v1-auth-register"
-               value="dolores"
+               value="dicta"
                data-component="body">
     <br>
-<p>Example: <code>dolores</code></p>
+<p>Example: <code>dicta</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -340,10 +340,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="email"                data-endpoint="POSTapi-v1-auth-register"
-               value="isidro77@example.org"
+               value="ryan98@example.com"
                data-component="body">
     <br>
-<p>Example: <code>isidro77@example.org</code></p>
+<p>Example: <code>ryan98@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -351,10 +351,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                               name="password"                data-endpoint="POSTapi-v1-auth-register"
-               value="$p;&^3*>5,wi"
+               value="/y'<B.t|nM"
                data-component="body">
     <br>
-<p>Example: <code>$p;&amp;^3*&gt;5,wi</code></p>
+<p>Example: <code>/y'&lt;B.t|nM</code></p>
         </div>
         </form>
 
@@ -657,7 +657,7 @@ const headers = {
 };
 
 let body = {
-    "receiver": "vel"
+    "receiver": "at"
 };
 
 fetch(url, {
@@ -740,10 +740,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="receiver"                data-endpoint="POSTapi-v1-chat-widget"
-               value="vel"
+               value="at"
                data-component="body">
     <br>
-<p>The id of the receiver of the message. Example: <code>vel</code></p>
+<p>The id of the receiver of the message. Example: <code>at</code></p>
         </div>
         </form>
 
@@ -770,8 +770,8 @@ const headers = {
 };
 
 let body = {
-    "receiver": "enim",
-    "payload": "officiis"
+    "receiver": "est",
+    "payload": "quos"
 };
 
 fetch(url, {
@@ -854,10 +854,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="receiver"                data-endpoint="POSTapi-v1-chat-send"
-               value="enim"
+               value="est"
                data-component="body">
     <br>
-<p>The id of the receiver of the message. Example: <code>enim</code></p>
+<p>The id of the receiver of the message. Example: <code>est</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>payload</code></b>&nbsp;&nbsp;
@@ -865,10 +865,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="payload"                data-endpoint="POSTapi-v1-chat-send"
-               value="officiis"
+               value="quos"
                data-component="body">
     <br>
-<p>The message to be sent. Example: <code>officiis</code></p>
+<p>The message to be sent. Example: <code>quos</code></p>
         </div>
         </form>
 
@@ -895,7 +895,7 @@ const headers = {
 };
 
 let body = {
-    "id": "velit"
+    "id": "facere"
 };
 
 fetch(url, {
@@ -978,10 +978,10 @@ You can check the Dev Tools console for debugging information.</code></pre>
  &nbsp;
                 <input type="text" style="display: none"
                               name="id"                data-endpoint="POSTapi-v1-chat-delete"
-               value="velit"
+               value="facere"
                data-component="body">
     <br>
-<p>The id of the message to be deleted. Example: <code>velit</code></p>
+<p>The id of the message to be deleted. Example: <code>facere</code></p>
         </div>
         </form>
 

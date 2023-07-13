@@ -172,7 +172,7 @@ return [
          * By default, assets are stored in `public/vendor/scribe`.
          * If set, assets will be stored in `public/{{assets_directory}}`
          */
-        'assets_directory' => null,
+        'assets_directory' => 'public/vendor/scribe',
 
         /*
          * Middleware to attach to the docs endpoint (if `add_routes` is true).
