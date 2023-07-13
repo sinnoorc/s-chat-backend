@@ -8,6 +8,12 @@ use Illuminate\Http\Request;
 
 class AuthController extends Controller
 {
+
+    /**
+     * @bodyParam email string 
+     * @bodyParam password string
+     * @unauthenticated
+     */
     public function login(Request $request)
     {
         try {
@@ -34,7 +40,15 @@ class AuthController extends Controller
         }
     }
 
-    public function register(Request $request){
+    /**
+     * @bodyParam name string 
+     * @bodyParam email string 
+     * @bodyParam password string
+     * @unauthenticated
+     */
+
+    public function register(Request $request)
+    {
         try {
             $request->validate([
                 'name' => 'required',
@@ -58,12 +72,37 @@ class AuthController extends Controller
         }
     }
 
-    public function logout(Request $request){
+
+
+    /**
+     * @header Authorization Bearer {token} 
+     */
+
+    public function logout(Request $request)
+    {
         try {
             $request->user()->token()->revoke();
             return response()->json([
                 'message' => 'Successfully logged out'
             ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => $e->getMessage()
+            ], 400);
+        }
+    }
+
+
+
+    /**
+     * @header Authorization Bearer {token} 
+     */
+
+    public function getUsers()
+    {
+        try {
+            $users = User::where('id', '!=', auth()->user()->id)->get();
+            return response()->json($users);
         } catch (\Exception $e) {
             return response()->json([
                 'message' => $e->getMessage()

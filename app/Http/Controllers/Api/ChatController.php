@@ -9,6 +9,12 @@ use Illuminate\Http\Request;
 class ChatController extends Controller
 {
 
+
+    /**
+     * @bodyParam receiver string required The id of the receiver of the message.
+     * @header Authorization Bearer {token} 
+     */
+
     public function chatWidget(Request $request)
     {
 
@@ -25,6 +31,12 @@ class ChatController extends Controller
 
         return response()->json($messages);
     }
+
+    /**
+     * @bodyParam receiver string required The id of the receiver of the message.
+     * @bodyParam payload json required The message to be sent.
+     * @header Authorization Bearer {token} 
+     */
 
     public function sendMessage(Request $request)
     {
@@ -52,6 +64,11 @@ class ChatController extends Controller
             ], 400);
         }
     }
+
+    /**
+     * @bodyParam id string required The id of the message to be deleted.
+     * @header Authorization Bearer {token} 
+     */
 
     public function deleteMessage(Request $request)
     {

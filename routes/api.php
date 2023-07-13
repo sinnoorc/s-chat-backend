@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Artisan;
 
 
 Route::prefix('v1')->group(function () {
-   
+    /**
+     * @unauthenticated
+     */
     Route::prefix('auth')->group(function () {
         Route::post('login', [AuthController::class, 'login']);
         Route::post('register', [AuthController::class, 'register']);
@@ -29,8 +31,8 @@ Route::prefix('v1')->group(function () {
         Route::get('user', function (Request $request) {
             return $request->user();
         });
+        Route::get('users', [AuthController::class, 'getUsers']);
         Route::post('logout', [AuthController::class, 'logout']);
-
         Route::prefix('chat')->group(function () {
             Route::post('widget', [ChatController::class, 'chatWidget']);
             Route::post('send', [ChatController::class, 'sendMessage']);
@@ -38,12 +40,11 @@ Route::prefix('v1')->group(function () {
         });
     });
 
-    
-    
 
-Route::post('clear-db' , function(){
-    Artisan::call('migrate:fresh --seed');
-    return 'Database Cleared';
-});
-});
 
+
+    // Route::post('clear-db' , function(){
+    //     Artisan::call('migrate:fresh --seed');
+    //     return 'Database Cleared';
+    // });
+});
