@@ -17,5 +17,10 @@ Route::get('/', function () {
     return view('scribe/index');
 });
 
+Route::get('/playground', function () {
+    event(new App\Events\Playground());
+    return null;
+});
+
 
 
