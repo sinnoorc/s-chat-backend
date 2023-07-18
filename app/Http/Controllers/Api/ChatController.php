@@ -29,7 +29,19 @@ class ChatController extends Controller
             $query->where('sender', $receiver)->where('receiver', $sender);
         })->orderBy('timestamp', 'desc')->get();
 
-        return response()->json($messages);
+        $s1 = substr($sender, 0, 7);
+        $s2 = substr($receiver, 0, 7);
+        $sorted_user_ids =[ $s1, $s2];
+        sort($sorted_user_ids);
+        $caller_id = implode('_', $sorted_user_ids);
+
+
+        $json = [
+            'caller_id' => $caller_id,
+            'messages' => $messages
+        ];
+
+        return  response()->json($json);
     }
 
     /**
